@@ -13,5 +13,10 @@ final class MainMenuCoordinator: Coordinator {
 
 // MARK: - MainMenuViewModelDelegate
 extension MainMenuCoordinator: MainMenuViewModelDelegate {
-    func mainMenuViewModelDidTrigger(_ menuItem: MainMenuItem) { }
+    func mainMenuViewModelDidTrigger(_ menuItem: MainMenuItem) {
+        controller.navigationController?.pushViewController(
+            ItemDetailCoordinator(item: menuItem).controller,
+            animated: true
+        )
+    }
 }

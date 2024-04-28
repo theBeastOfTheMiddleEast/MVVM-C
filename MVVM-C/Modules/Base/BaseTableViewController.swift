@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 
 /// A base view controller that provides a UITableView instance by default
-class BaseTableViewController: UIViewController {
+class BaseTableViewController: BaseViewController {
     var tableViewStyle: UITableView.Style { .plain }
     
     lazy var tableView: UITableView = {

@@ -24,6 +24,10 @@
 		79AD15112BDEAE86003F56D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD15102BDEAE86003F56D3 /* Constants.swift */; };
 		79AD15142BDEAF98003F56D3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD15132BDEAF98003F56D3 /* Color.swift */; };
 		79AD15162BDEB1B1003F56D3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD15152BDEB1B1003F56D3 /* Coordinator.swift */; };
+		79AD15192BDEB20C003F56D3 /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD15182BDEB20C003F56D3 /* ItemDetailViewModel.swift */; };
+		79AD151B2BDEB215003F56D3 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD151A2BDEB215003F56D3 /* ItemDetailViewController.swift */; };
+		79AD151D2BDEB221003F56D3 /* ItemDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD151C2BDEB221003F56D3 /* ItemDetailCoordinator.swift */; };
+		79AD151F2BDEB2B4003F56D3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD151E2BDEB2B4003F56D3 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		79AD15102BDEAE86003F56D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		79AD15132BDEAF98003F56D3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		79AD15152BDEB1B1003F56D3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		79AD15182BDEB20C003F56D3 /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		79AD151A2BDEB215003F56D3 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		79AD151C2BDEB221003F56D3 /* ItemDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailCoordinator.swift; sourceTree = "<group>"; };
+		79AD151E2BDEB2B4003F56D3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 			children = (
 				79AD14EF2BDE9876003F56D3 /* App */,
 				79AD14F02BDE987B003F56D3 /* Base */,
+				79AD15172BDEB1EC003F56D3 /* ItemDetail */,
 				79AD15052BDEACC1003F56D3 /* MainMenu */,
 			);
 			path = Modules;
@@ -127,8 +136,9 @@
 		79AD14F02BDE987B003F56D3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				79AD14F72BDE98D0003F56D3 /* BaseTableViewController.swift */,
 				79AD15002BDE9F9A003F56D3 /* BaseNavigationController.swift */,
+				79AD14F72BDE98D0003F56D3 /* BaseTableViewController.swift */,
+				79AD151E2BDEB2B4003F56D3 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -184,6 +194,16 @@
 				79AD15132BDEAF98003F56D3 /* Color.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		79AD15172BDEB1EC003F56D3 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				79AD151C2BDEB221003F56D3 /* ItemDetailCoordinator.swift */,
+				79AD151A2BDEB215003F56D3 /* ItemDetailViewController.swift */,
+				79AD15182BDEB20C003F56D3 /* ItemDetailViewModel.swift */,
+			);
+			path = ItemDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,13 +288,17 @@
 				79AD15162BDEB1B1003F56D3 /* Coordinator.swift in Sources */,
 				79AD15072BDEACE2003F56D3 /* MainMenuViewModel.swift in Sources */,
 				79AD14FF2BDE9F83003F56D3 /* AppCoordinator.swift in Sources */,
+				79AD151B2BDEB215003F56D3 /* ItemDetailViewController.swift in Sources */,
 				79AD15142BDEAF98003F56D3 /* Color.swift in Sources */,
+				79AD151F2BDEB2B4003F56D3 /* BaseViewController.swift in Sources */,
 				79AD15012BDE9F9A003F56D3 /* BaseNavigationController.swift in Sources */,
 				79AD14D92BDE9037003F56D3 /* AppDelegate.swift in Sources */,
 				79AD14F62BDE98AD003F56D3 /* Identifiable.swift in Sources */,
 				79AD150B2BDEACFA003F56D3 /* MainMenuCoordinator.swift in Sources */,
 				79AD14F82BDE98D0003F56D3 /* BaseTableViewController.swift in Sources */,
+				79AD151D2BDEB221003F56D3 /* ItemDetailCoordinator.swift in Sources */,
 				79AD14DB2BDE9037003F56D3 /* SceneDelegate.swift in Sources */,
+				79AD15192BDEB20C003F56D3 /* ItemDetailViewModel.swift in Sources */,
 				79AD15112BDEAE86003F56D3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
