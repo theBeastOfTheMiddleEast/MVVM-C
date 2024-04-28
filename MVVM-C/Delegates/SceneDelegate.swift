@@ -1,6 +1,8 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    private lazy var appCoordinator = AppCoordinator()
+    
     var window: UIWindow?
     
     func scene(
@@ -8,15 +10,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-            guard let windowScene = (scene as? UIWindowScene) else { return }
-            
-            let rootViewController = UIViewController()
-            rootViewController.view.backgroundColor = .systemRed
-            
-            window = UIWindow(frame: windowScene.screen.bounds)
-            window?.rootViewController = rootViewController
-            window?.windowScene = windowScene
-            window?.makeKeyAndVisible()
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        appCoordinator.initializeApplication()
+        
+        window = UIWindow(frame: windowScene.screen.bounds)
+        window?.rootViewController = appCoordinator.controller
+        window?.windowScene = windowScene
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) { }
