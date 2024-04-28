@@ -11,7 +11,6 @@
 		79AD14DB2BDE9037003F56D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD14DA2BDE9037003F56D3 /* SceneDelegate.swift */; };
 		79AD14E22BDE9038003F56D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AD14E12BDE9038003F56D3 /* Assets.xcassets */; };
 		79AD14E52BDE9038003F56D3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 79AD14E42BDE9038003F56D3 /* Base */; };
-		79AD14F42BDE989C003F56D3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD14F32BDE989C003F56D3 /* Coordinator.swift */; };
 		79AD14F62BDE98AD003F56D3 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD14F52BDE98AD003F56D3 /* Identifiable.swift */; };
 		79AD14F82BDE98D0003F56D3 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD14F72BDE98D0003F56D3 /* BaseTableViewController.swift */; };
 		79AD14FB2BDE98FB003F56D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 79AD14FA2BDE98FB003F56D3 /* SnapKit */; };
@@ -24,6 +23,7 @@
 		79AD150E2BDEAD96003F56D3 /* MainMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD150D2BDEAD96003F56D3 /* MainMenuItem.swift */; };
 		79AD15112BDEAE86003F56D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD15102BDEAE86003F56D3 /* Constants.swift */; };
 		79AD15142BDEAF98003F56D3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD15132BDEAF98003F56D3 /* Color.swift */; };
+		79AD15162BDEB1B1003F56D3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AD15152BDEB1B1003F56D3 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,6 @@
 		79AD14E12BDE9038003F56D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79AD14E42BDE9038003F56D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79AD14E62BDE9038003F56D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79AD14F32BDE989C003F56D3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = SOURCE_ROOT; };
 		79AD14F52BDE98AD003F56D3 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		79AD14F72BDE98D0003F56D3 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		79AD14FE2BDE9F83003F56D3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		79AD150D2BDEAD96003F56D3 /* MainMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuItem.swift; sourceTree = "<group>"; };
 		79AD15102BDEAE86003F56D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		79AD15132BDEAF98003F56D3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		79AD15152BDEB1B1003F56D3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 		79AD14F22BDE9892003F56D3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				79AD14F32BDE989C003F56D3 /* Coordinator.swift */,
+				79AD15152BDEB1B1003F56D3 /* Coordinator.swift */,
 				79AD14F52BDE98AD003F56D3 /* Identifiable.swift */,
 			);
 			path = Protocols;
@@ -265,6 +265,7 @@
 			files = (
 				79AD150E2BDEAD96003F56D3 /* MainMenuItem.swift in Sources */,
 				79AD15092BDEACEC003F56D3 /* MainMenuViewController.swift in Sources */,
+				79AD15162BDEB1B1003F56D3 /* Coordinator.swift in Sources */,
 				79AD15072BDEACE2003F56D3 /* MainMenuViewModel.swift in Sources */,
 				79AD14FF2BDE9F83003F56D3 /* AppCoordinator.swift in Sources */,
 				79AD15142BDEAF98003F56D3 /* Color.swift in Sources */,
@@ -274,7 +275,6 @@
 				79AD150B2BDEACFA003F56D3 /* MainMenuCoordinator.swift in Sources */,
 				79AD14F82BDE98D0003F56D3 /* BaseTableViewController.swift in Sources */,
 				79AD14DB2BDE9037003F56D3 /* SceneDelegate.swift in Sources */,
-				79AD14F42BDE989C003F56D3 /* Coordinator.swift in Sources */,
 				79AD15112BDEAE86003F56D3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
